@@ -4,7 +4,7 @@
 }
 
 div i {
-      color-scheme: linear-gradient(45deg, #ff8c00, #ff0080);
+  color-scheme: linear-gradient(45deg, #ff8c00, #ff0080);
 }
 
 h1,
@@ -125,6 +125,11 @@ footer {
   flex-direction: column;
 }
 
+.section-contact2 {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -207,7 +212,6 @@ footer a {
 }
 
 .footer-contact {
-  margin: 20px;
   margin-left: 40px;
   border-color: #00fbff;
   border-width: 4px;
@@ -229,7 +233,6 @@ footer a {
   margin: -7px;
   margin-top: -94px;
 }
-
 
 form {
   display: flex;
@@ -316,6 +319,19 @@ footer div {
 }
 
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .footer-hover {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
   .wires-rotated {
     width: 100px;
   }
@@ -328,27 +344,49 @@ footer div {
     width: 104%;
   }
 
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   p {
-    margin-top: -20px;
-    width: 180px;
+    padding: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
   }
 
   footer h4 {
-    width: 210px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
   header a {
+    font-size: 20px;
     height: 35px;
-    margin: 0 20px;
+    margin: 0 10px;
   }
 
   footer {
-    height: 100vw;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    height: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-contact2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    gap: 20px;
   }
 
   .wires {
@@ -356,32 +394,12 @@ footer div {
     padding-top: 304px;
   }
 
-  .section-contact {
-    grid-area: 1 / 1 / 2 / 3;
-  }
-  .section-contact a {
-    grid-area: 2 / 1 / 3 / 2;
-  }
   .section-contact i {
     padding: 20px;
-    grid-area: 2 / 2 / 3 / 3;
-  }
-  footer h4 {
-    grid-area: 3 / 1 / 4 / 3;
   }
 
   .introductie {
-    width: 70vw;
-    font-size: medium;
-  }
-
-  .section-contact {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-  }
-
-  footer div {
-    display: flex;
+    width: 50vw;
+    font-size: 18px;
   }
 }
