@@ -19,7 +19,6 @@ input,
 ::placeholder {
   background: linear-gradient(to right, #b0e0e6, #147fd6);
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
 }
 
@@ -126,7 +125,6 @@ h1 {
   font-size: 72px;
   background: linear-gradient(#00fbff, rgba(0, 117, 255, 0));
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
   margin-top: 100px;
 }
@@ -147,7 +145,6 @@ main h4 {
   font-weight: bold;
   background: linear-gradient(#ffffff, #89fdff);
   color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
   margin-top: 10px;
   margin-right: -1px;
@@ -301,7 +298,6 @@ input {
   border: #00fbff;
   border-style: solid;
   border-width: 4px;
-  background-color: transparent;
   margin-bottom: 20px;
 }
 
@@ -365,7 +361,6 @@ footer div {
     border: #00fbff;
     border-style: solid;
     border-width: 4px;
-    background-color: transparent;
     margin-bottom: 20px;
   }
 
@@ -377,10 +372,12 @@ footer div {
   }
 
 .work-preview {
+  justify-self: center;
   padding-bottom: 50px;
 }
 
 #about-more {
+  justify-self: center;
   padding-top: 40px;
 }
 
