@@ -56,7 +56,7 @@ header {
   color: #0047fe;
 }
 
-#work-grid {
+.work-grid {
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px;
   column-gap: 40px;
@@ -80,14 +80,7 @@ header a {
   margin: 0 40px;
 }
 
-header a:hover {
-  border-radius: 3px;
-  animation: bounce-in 0.5s ease;
-  box-shadow: 0 0 10px #00fbff;
-  transition: 600ms;
-}
-
-.footer-hover:hover {
+.footer-hover:hover, header a:hover {
   border-radius: 3px;
   animation: bounce-in 0.5s ease;
   box-shadow: 0 0 10px #00fbff;
@@ -122,12 +115,7 @@ footer {
   justify-content: space-around;
 }
 
-.section-contact {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-contact2 {
+.section-contact, .section-contact2 {
   display: flex;
   flex-direction: column;
 }
@@ -327,6 +315,9 @@ input {
   display: flex;
   align-items: end;
   flex-direction: column;
+  width: 360px;
+  height: 360px;
+  padding-top: 15px;
 }
 
 main div {
@@ -352,7 +343,7 @@ footer div {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .footer-hover {
@@ -367,6 +358,56 @@ footer div {
   .wires-rotated {
     width: 100px;
   }
+
+  input {
+    width: 300px;
+    height: 50px;
+    border: #00fbff;
+    border-style: solid;
+    border-width: 4px;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  #preview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 20px;
+  }
+
+.work-preview {
+  padding-bottom: 50px;
+}
+
+#about-more {
+  padding-top: 40px;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
+
+main h4 {
+  padding: 0px;
+  padding-left: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#wires-about {
+  display: none;
+}
 
   .footer-line {
     display: none;
@@ -430,8 +471,15 @@ footer div {
     padding: 20px;
   }
 
-  .introductie {
-    width: 50vw;
-    font-size: 18px;
+  .introductie, #contact-intro, .intro-about {
+    width: 60vw;
+    font-size: 28px;
+  }
+
+  #pfp {
+    width: 60px;
+    position: absolute;
+    padding: 20px;
+    padding-top: 120px;
   }
 }
