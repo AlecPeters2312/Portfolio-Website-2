@@ -17,7 +17,7 @@ h3,
 h5,
 input,
 ::placeholder {
-  background: linear-gradient(to right, #b0e0e6, #147fd6);
+  background: linear-gradient(to top, #b0e0e6, #147fd6);
   color: transparent;
   background-clip: text;
 }
@@ -49,10 +49,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#contact-header {
-  color: #0047fe;
 }
 
 .work-grid {
@@ -101,7 +97,7 @@ header a {
   align-items: center;
   justify-content: center;
   height: 35px;
-  width: 60px;
+  width: 70px;
   text-decoration: none;
   margin: 30px;
 }
@@ -158,19 +154,16 @@ h1 {
   justify-content: center;
   font-size: 72px;
   background: linear-gradient(#00fbff, rgba(0, 117, 255, 0));
-  color: transparent;
   background-clip: text;
 }
 
 h2 {
   font-size: 40px;
-  padding: 10px;
 }
 
 main h4 {
-  padding: 20px;
-  padding-left: 100px;
   font-size: 20px;
+  width: 40vw;
 }
 
 #more {
@@ -183,11 +176,16 @@ main h4 {
   margin-right: -1px;
 }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 40px;
-  padding: 20px;
+.spacing {
+  height: 5vw;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #more:hover {
@@ -196,28 +194,45 @@ main h4 {
 }
 
 #contact-intro {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
   width: 690px;
   text-align: center;
 }
 
 .introductie {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
-  width: 690px;
+  width: 40vw;
   text-align: center;
 }
 
 .introductie-work {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: lighter;
   width: 690px;
   text-align: center;
 }
 
+.about-pfp {
+  width: 30%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-intro {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-intro-align {
+  display: flex;
+}
+
 .intro-about {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
   width: 690px;
   text-align: center;
@@ -316,11 +331,9 @@ h5 {
 }
 
 #pfp {
-  position: absolute;
-  width: 150px;
-  padding: 60px;
-  padding-top: 90px;
-  margin-top: -130px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
 }
 
 #contact-verzenden:hover {
@@ -339,10 +352,6 @@ input {
   margin-bottom: 20px;
 }
 
-.wires {
-  margin: -7px;
-}
-
 #about-more {
   display: flex;
   align-items: end;
@@ -358,10 +367,9 @@ main div {
 }
 
 .intro {
-  height: 60vw;
   position: absolute;
-  margin-top: 10vh;
-  top: 0;
+  bottom: 5%;
+  height: 35vw;
 }
 
 section {
@@ -371,13 +379,13 @@ section {
 .wires-section {
   display: flex;
   justify-content: flex-start;
-  position: relative;
   height: 20vw;
 }
 
 .wires-alignment {
   display: flex;
   justify-content: end;
+  height: 20vw;
 }
 
 #wires-about {
@@ -419,6 +427,12 @@ footer div {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+  }
+
+  .about-intro-align {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
   }
 
   .wires-rotated {
@@ -466,9 +480,8 @@ footer div {
   }
 
   main h4 {
-    padding: 0px;
-    padding-left: 0px;
     font-size: 20px;
+    width: 70vw;
     text-align: center;
   }
 
@@ -546,9 +559,7 @@ footer div {
   }
 
   #pfp {
-    width: 60px;
-    position: absolute;
-    padding: 20px;
-    padding-top: 120px;
+    width: 20vw;
+    height: auto;
   }
 }
