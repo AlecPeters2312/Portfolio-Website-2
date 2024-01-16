@@ -18,8 +18,8 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="flex-center">
+      <nav class="flex-center align-items-center">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
         <a href="Work.html">Work</a>
@@ -28,96 +28,76 @@
     </header>
 
     <main id="work-page">
-        <div class="wires-section-change">
-          <img class="wires-rotated" src="Img/WiresRotated.png" alt="Wires" />
+      <div class="wires-section-change">
+        <img class="wires-rotated" src="Img/WiresRotated.png" alt="Wires" />
+      </div>
+      <section id="intro-work">
+        <h1 class="flex-center">Work</h1>
+        <div>
+          <h2 class="introductie text-align-center">
+            Hier ziet u wat ik heb gedaan met websites en eenvoudig
+            programmeren. Ik heb bijvoorbeeld de Pink Goose-website nagemaakt,
+            een spel genaamd Mastermind gemaakt in Java, en een
+            bibliotheekbeheersysteem ontwikkeld in Java. En natuurlijk dit
+            portfolio-project.
+          </h2>
         </div>
-        <section id="intro-work">
-          <h1>Work</h1>
-          <div>
-            <h2 class="introductie">
-              Hier ziet u wat ik heb gedaan met websites en eenvoudig
-              programmeren. Ik heb bijvoorbeeld de Pink Goose-website nagemaakt,
-              een spel genaamd Mastermind gemaakt in Java, en een
-              bibliotheekbeheersysteem ontwikkeld in Java. En natuurlijk dit
-              portfolio-project.
-            </h2>
-          </div>
-        </section>
-        <section id="work-grids">
-          <div class="work-grid">
-            <img
-              class="work-preview"
-              src="Img/PreviewWork2.jpg"
-              alt="Project"
-            />
-            <img
-              class="work-preview"
-              src="Img/PreviewWork3.jpg"
-              alt="Project"
-            />
-            <img class="work-preview" src="Img/PreviewWork.jpg" alt="Project" />
-          </div>
-          <div class="work-grid">
-            <img
-              class="work-preview"
-              src="Img/PreviewWork4.jpg"
-              alt="Project"
-            />
-            <img
-              class="work-preview"
-              src="Img/PreviewWork5.jpg"
-              alt="Project"
-            />
-            <img
-              class="work-preview"
-              src="Img/PreviewWork6.jpg"
-              alt="Project"
-            />
-          </div>
-          <section id="work-align">
-            <div class="work-grid">
-              <div class="work-download">
-                <h3>Mastermind</h3>
-                <h5>
-                  Mastermind is het eerste grote project dat ik heb gemaakt met
-                  Java voor het vak basis programmeren
-                </h5>
-                <a
-                  href="downloads/MasterMind.java"
-                  class="download-link"
-                  download
-                  >Download Bestand</a
-                >
-              </div>
-              <div class="work-download">
-                <h3>Pink Goose</h3>
-                <h5>
-                  Pink Goose is het eerste grote project dat ik heb gemaakt met
-                  html en css voor het vak website 1
-                </h5>
-                <a
-                  href="downloads/EindWebsite.zip"
-                  class="download-link"
-                  download
-                  >Download Bestand</a
-                >
-              </div>
-              <div class="work-download">
-                <h3>Project Week 1</h3>
-                <h5>
-                  Het project van project week 1 was het eerste project dat ik
-                  in een team deed en in een paar dagen af heb gemaakt.
-                </h5>
-                <a
-                  href="downloads/ProjectWeek1.zip"
-                  class="download-link"
-                  download
-                  >Download Bestand</a
-                >
-              </div>
+      </section>
+      <section id="work-grids">
+        <div class="work-grid flex-center">
+          <img class="work-preview" src="Img/PreviewWork2.jpg" alt="Project" />
+          <img class="work-preview" src="Img/PreviewWork3.jpg" alt="Project" />
+          <img class="work-preview" src="Img/PreviewWork.jpg" alt="Project" />
+        </div>
+        <div class="work-grid flex-center">
+          <img class="work-preview" src="Img/PreviewWork4.jpg" alt="Project" />
+          <img class="work-preview" src="Img/PreviewWork5.jpg" alt="Project" />
+          <img class="work-preview" src="Img/PreviewWork6.jpg" alt="Project" />
+        </div>
+        <section id="work-align">
+          <div class="work-grid flex-center">
+            <div class="work-download flex-center">
+              <h3 class="text-align-center">Mastermind</h3>
+              <h5 class="text-align-center">
+                Mastermind is het eerste grote project dat ik heb gemaakt met
+                Java voor het vak basis programmeren
+              </h5>
+              <a
+                href="downloads/MasterMind.java"
+                class="download-link text-align-center"
+                download
+                >Download Bestand</a
+              >
             </div>
-          </section>
+            <div class="work-download flex-center">
+              <h3 class="text-align-center">Pink Goose</h3>
+              <h5 class="text-align-center">
+                Pink Goose is het eerste grote project dat ik heb gemaakt met
+                html en css voor het vak website 1
+              </h5>
+              <a
+                href="downloads/EindWebsite.zip"
+                class="download-link text-align-center"
+                download
+                >Download Bestand</a
+              >
+            </div>
+            <div class="work-download flex-center">
+              <h3 class="text-align-center">Project Week 1</h3>
+              <h5 class="text-align-center">
+                Het project van project week 1 was het eerste project dat ik in
+                een team deed en in een paar dagen af heb gemaakt.
+              </h5>
+              <a
+                href="downloads/ProjectWeek1.zip"
+                class="download-link text-align-center"
+                download
+                >Download Bestand</a
+              >
+            </div>
+          </div>
         </section>
+      </section>
     </main>
 
     <footer>
@@ -126,7 +106,7 @@
         <div class="footer-contact"><a href="Contact.html">Contact Mij</a></div>
         <h4>©️ Copyright 2023 Alec Peters</h4>
       </div>
-      <div id="footer-align1">
+      <div class="footer-align1 flex-center">
         <div class="footer-line"></div>
         <div class="section-contact">
           <a href="index.html" class="footer-hover">Home</a>
@@ -135,7 +115,7 @@
           <a class="footer-hover" href="Contact.html">Contact</a>
         </div>
       </div>
-      <div id="footer-align2">
+      <div class="footer-align2 flex-center">
         <div class="footer-line"></div>
         <div class="section-contact2">
           <a href="https://github.com/AlecPeters2312/Portfolio-Website-2"
@@ -147,7 +127,7 @@
           <a href="">
             <i class="fa-solid fa-question fa-xl footer-hover"></i
           ></a>
-          <a class="mailto" href="mailto:1207074@student.roc-nijmegen.nl">
+          <a href="mailto:1207074@student.roc-nijmegen.nl">
             <i class="fa-solid fa-envelope fa-lg footer-hover"></i
           ></a>
         </div>

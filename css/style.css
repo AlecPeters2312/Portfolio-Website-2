@@ -3,10 +3,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-div i {
-  color-scheme: linear-gradient(45deg, #ff8c00, #ff0080);
-}
-
 h1,
 h2,
 p,
@@ -22,67 +18,19 @@ input,
   background-clip: text;
 }
 
-footer h4 {
-  padding-top: 20px;
-  padding-left: 40px;
-  color: #607578;
-}
-
-i {
-  color: #7eaed5;
-}
-
 body {
   background-image: linear-gradient(to top, #030715, #091f3d);
 }
 
+/* Header */
 header {
   height: 100px;
   width: 100%;
   background-color: #080e26;
   margin: -7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.work-grid {
-  grid-template-columns: 100px 50px 100px;
-  grid-template-rows: 80px auto 80px;
-  column-gap: 40px;
-  padding-bottom: 40px;
-}
-
-#work-grids {
-  grid-area: 2 / 1 / 5 / 3;
-}
-
-#wires-grid {
-  height: 20vw;
-  grid-area: 1 / 1 / 2 / 4;
-  display: flex;
-  justify-content: flex-start;
-}
-
-#work-page {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-#contact-page {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 nav {
-  display: flex;
-  align-items: center;
   height: 100px;
   width: 600px;
 }
@@ -97,81 +45,52 @@ header a {
   margin: 30px;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
+/* Index Pagina */
+.intro {
+  position: absolute;
+  bottom: 5%;
+  height: 35vw;
 }
+/* Index Pagina Einde */
 
-.footer-hover:hover,
-header a:hover {
-  border-radius: 3px;
-  animation: bounce-in 0.5s ease;
-  box-shadow: 0 0 10px #00fbff;
-  transition: 600ms;
-}
-
-@keyframes bounce-in {
-  0% {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.footer-contact:hover {
-  border-radius: 3px;
-  animation: bounce-in 0.5s ease;
-  box-shadow: 0 0 20px #00fbff;
-  transition: 600ms;
-}
-
-footer {
-  height: 40vh;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.section-contact,
-.section-contact2 {
+/* About Pagina */
+#about-intro {
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
 
-.section-contact {
-  grid-area: 1 / 2 / 2 / 2;
+.about-pfp {
+  width: 55%;
+  height: auto;
 }
 
-#footer-align1 {
-  justify-content: center;
-  grid-area: 1 / 8 / 2 / 5;
+#pfp {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 100%;
 }
 
-#footer-align2 {
-  justify-content: center;
-  grid-area: 1 / 10 / 2 / 8;
+.intro-about {
+  font-size: 32px;
+  font-weight: lighter;
+  width: 47vw;
 }
 
-h1 {
+#preview-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 40px;
+  padding: 20px;
+}
+
+#about-more {
   display: flex;
-  justify-content: center;
-  font-size: 72px;
-  background: linear-gradient(#00fbff, rgba(0, 117, 255, 0));
-  background-clip: text;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-main h4 {
-  font-size: 20px;
-  width: 40vw;
+  align-items: end;
+  flex-direction: column;
+  width: 360px;
+  height: 360px;
+  padding-top: 15px;
 }
 
 #more {
@@ -184,121 +103,45 @@ main h4 {
   margin-right: -1px;
 }
 
-#spacing {
-  height: 5vw;
-}
-
-.about-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 #more:hover {
   color: #ffffff;
   font-weight: bolder;
 }
 
-#contact-intro {
-  font-size: 32px;
-  font-weight: lighter;
-  width: 690px;
-  text-align: center;
+#spacing {
+  height: 5vw;
 }
 
-.introductie {
-  font-size: 32px;
-  font-weight: lighter;
-  width: 45vw;
-  text-align: center;
-}
-
-.introductie-work {
-  font-size: 32px;
-  font-weight: lighter;
-  width: 690px;
-  text-align: center;
-}
-
-#about-pfp {
-  width: 55%;
-  height: auto;
-  display: flex;
-  align-items: center;
-}
-
-#about-intro {
-  width: 75%;
-  display: flex;
+.about-flex {
   flex-direction: column;
-}
-
-#about-intro-align {
-  display: flex;
-}
-
-#intro-about {
-  font-size: 32px;
-  font-weight: lighter;
-  width: 47vw;
   text-align: center;
 }
+/* About Pagina Einde */
 
-p {
-  padding: 20px;
-  padding-left: 42px;
-  font-size: 35px;
-  width: 20vw;
+/* Work Pagina */
+#work-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-footer a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 23px;
-  text-decoration: none;
+#intro-work {
+  position: absolute;
+  bottom: 5%;
+  height: 35vw;
 }
 
-.footer-contact {
-  margin-left: 40px;
-  border-color: #00fbff;
-  border-width: 4px;
-  border-style: solid;
-  width: 190px;
-  height: 50px;
-  margin-top: -20px;
+#work-grids {
+  grid-area: 2 / 1 / 5 / 3;
 }
 
-.footer-line {
-  background-color: #3c4868;
-  width: 4px;
-  height: 80%;
-  margin: 25px;
-}
-
-.wires-rotated {
-  top: 100px;
-  margin-top: 5px;
-  margin-left: -7px;
-}
-
-form {
-  position: relative;
-  bottom: 30%;
-  padding-top: 20px;
-  width: 98.9vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact-verzenden {
-  margin-top: 40px;
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
+.work-grid {
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto 80px;
+  column-gap: 40px;
+  padding-bottom: 40px;
 }
 
 .work-download {
@@ -313,48 +156,51 @@ form {
 }
 
 h3 {
-  text-align: center;
   font-size: 30px;
   padding: 10px;
   margin-bottom: -20px;
 }
 
 h5 {
-  text-align: center;
   font-size: 20px;
   padding: 10px;
 }
 
 .download-link {
   color: #0047fe;
-  text-align: center;
   padding-bottom: 20px;
 }
+/* Work Pagina Einde */
 
-#preview-grid {
+/* Contact Pagina */
+#contact-page {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-column-gap: 40px;
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.work-preview {
-  width: 360px;
-  height: 360px;
-  border-radius: 20px;
-}
-
-#pfp {
-  width: 20vw;
+#wires-grid {
   height: 20vw;
-  border-radius: 100%;
+  grid-area: 1 / 1 / 2 / 4;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 12px;
 }
 
-#contact-verzenden:hover {
-  animation: bounce-in 0.5s ease;
-  box-shadow: 0 0 20px #00fbff;
-  transition: 600ms;
-  cursor: pointer;
+#intro-contact {
+  position: absolute;
+  bottom: 40%;
+  height: 20vw;
+}
+
+form {
+  position: relative;
+  bottom: 30%;
+  padding-top: 20px;
+  width: 98.9vw;
+  flex-direction: column;
 }
 
 input {
@@ -369,36 +215,175 @@ input {
   text-indent: 10px;
 }
 
-#about-more {
+.contact-verzenden {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.contact-verzenden:hover {
+  animation: bounce-in 0.5s ease;
+  box-shadow: 0 0 20px #00fbff;
+  transition: 600ms;
+  cursor: pointer;
+}
+/* Contact Pagina Einde */
+
+/* Footer */
+footer {
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+footer div {
   display: flex;
-  align-items: end;
+  justify-content: space-evenly;
+}
+
+.section-contact,
+.section-contact2 {
+  display: flex;
   flex-direction: column;
+}
+
+.section-contact {
+  grid-area: 1 / 2 / 2 / 2;
+}
+
+p {
+  padding: 20px;
+  padding-left: 42px;
+  font-size: 35px;
+  width: 20vw;
+}
+
+.footer-contact {
+  margin-left: 40px;
+  border-color: #00fbff;
+  border-width: 4px;
+  border-style: solid;
+  width: 190px;
+  height: 50px;
+  margin-top: -20px;
+}
+
+.footer-contact:hover {
+  border-radius: 3px;
+  animation: bounce-in 0.5s ease;
+  box-shadow: 0 0 20px #00fbff;
+  transition: 600ms;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+footer h4 {
+  padding-top: 20px;
+  padding-left: 40px;
+  color: #607578;
+}
+
+.footer-align1 {
+  grid-area: 1 / 8 / 2 / 5;
+}
+
+.footer-line {
+  background-color: #3c4868;
+  width: 4px;
+  height: 80%;
+  margin: 25px;
+}
+
+.footer-align2 {
+  grid-area: 1 / 10 / 2 / 8;
+}
+
+div i {
+  color-scheme: linear-gradient(45deg, #ff8c00, #ff0080);
+}
+
+i {
+  color: #7eaed5;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-hover:hover,
+header a:hover {
+  border-radius: 3px;
+  animation: bounce-in 0.5s ease;
+  box-shadow: 0 0 10px #00fbff;
+  transition: 600ms;
+}
+/* Footer Pagina Einde */
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 72px;
+  background: linear-gradient(#00fbff, rgba(0, 117, 255, 0));
+  background-clip: text;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+main h4 {
+  font-size: 20px;
+  width: 40vw;
+}
+
+.introductie {
+  font-size: 32px;
+  font-weight: lighter;
+  width: 45vw;
+}
+
+.wires-rotated {
+  top: 100px;
+  margin-top: 5px;
+  margin-left: -7px;
+}
+
+.work-preview {
   width: 360px;
   height: 360px;
-  padding-top: 15px;
+  border-radius: 20px;
 }
 
 main div {
   display: flex;
   justify-content: center;
-}
-
-.intro {
-  position: absolute;
-  bottom: 5%;
-  height: 35vw;
-}
-
-#intro-contact {
-  position: absolute;
-  bottom: 40%;
-  height: 20vw;
-}
-
-#intro-work {
-  position: absolute;
-  bottom: 5%;
-  height: 35vw;
 }
 
 section {
@@ -422,11 +407,6 @@ section {
   display: flex;
   justify-content: end;
   height: 20vw;
-}
-
-footer div {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 600px) {
@@ -453,11 +433,6 @@ footer div {
     width: 95%;
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-
   #work-grids {
     transform: translateY(17%);
     grid-area: 2/ 1 / 5 / 3;
@@ -470,42 +445,34 @@ footer div {
   .intro {
     position: relative;
     bottom: 10%;
-    height: 60vw;
   }
 
   #intro-work {
     position: relative;
     bottom: 0%;
-    height: 60vw;
   }
 
   #index-main {
     height: 70vh;
   }
 
-  #about-intro-align {
+  .about-intro-align {
     flex-direction: column;
-    align-items: center;
     padding-top: 20px;
-  }
-
-  .work-grid .work-download {
-    display: flex;
-    justify-content: center;
   }
 
   #work-align {
     display: flex;
     justify-content: center;
   }
-  
+
   .work-page {
     display: grid;
     grid-template-columns: 0;
     grid-template-rows: 0;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-  }  
+  }
 
   input {
     width: 300px;
