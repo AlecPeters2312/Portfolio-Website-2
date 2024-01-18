@@ -13,12 +13,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- De link hierboven is zodat de iconen van font awesome werken die ik heb
+    gebruikt in mijn footer. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="flex-center">
+      <!-- Ik heb hier de class flex-center aangemaakt die ik ook vaker teruggebruik,
+      waardoor mijn css korter is en daarmee kan ik gelijk zorgen dat er op een
+      element display flex en justify content center is toegepast. -->
       <nav class="flex-center align-items-center">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
@@ -32,6 +37,10 @@
         <img class="wires-rotated" src="Img/WiresRotated.png" alt="Wires" />
       </div>
       <section class="intro">
+        <!-- Hier heb ik de sectie intro die ik op vrijwel elke pagina weer gebruikt.
+        Bij deze class heb ik in de css gezorgd dat er een gradiënt op de
+        tekst is gekomen en dat de tekst in het midden van de pagina staat en
+        dezelfde grote heeft op elke pagina. -->
         <h1 class="flex-center">Portfolio</h1>
         <div>
           <h2 class="introductie text-align-center">
@@ -44,13 +53,16 @@
       <div class="wires-alignment">
         <img src="Img/Wires.png" alt="Wires" />
       </div>
+      <!-- Hier heb ik ook weer een deel voor de afbeelding die onderin de pagina
+      staat op elke pagina. Dit heb ik gedaan door een afbeelding in een div te zetten, 
+      waarbij ik in de css heb gezorgd dat de div rechts onderin gezet wordt. -->
     </main>
 
     <footer>
       <div class="section-contact">
         <p>Alec Peters</p>
         <div class="footer-contact"><a href="Contact.html">Contact Mij</a></div>
-        <h4>©️ Copyright 2023 Alec Peters</h4>
+        <h4>©️ Alec Peters 2023/2024</h4>
       </div>
       <div class="footer-align1 flex-center">
         <div class="footer-line"></div>
@@ -67,14 +79,14 @@
           <a href="https://github.com/AlecPeters2312/Portfolio-Website-2"
             ><i class="fa-brands fa-github fa-lg footer-hover"></i>
           </a>
-          <a href="">
-            <i class="fa-solid fa-question fa-xl footer-hover"></i
-          ></a>
-          <a href="">
-            <i class="fa-solid fa-question fa-xl footer-hover"></i
+          <a href="tel:123412345">
+            <i class="fa-solid fa-phone fa-lg footer-hover"></i
           ></a>
           <a href="mailto:1207074@student.roc-nijmegen.nl">
             <i class="fa-solid fa-envelope fa-lg footer-hover"></i
+          ></a>
+          <a href="https://instagram.com">
+            <i class="fa-brands fa-instagram fa-xl footer-hover"></i
           ></a>
         </div>
       </div>
