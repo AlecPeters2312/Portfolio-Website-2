@@ -6,19 +6,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- De link hierboven is zodat de iconen van font awesome werken die ik heb
+    gebruikt in mijn footer. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
   <body>
     <header class="flex-center">
+      <!-- Ik heb hier de class flex-center aangemaakt die ik ook vaker teruggebruik,
+      waardoor mijn css korter is en daarmee kan ik gelijk zorgen dat er op een
+      element display flex en justify content center is toegepast. -->
       <nav class="flex-center align-items-center">
         <a href="index.html">Home</a>
         <a href="About.html">About</a>
@@ -27,17 +30,17 @@
       </nav>
     </header>
 
+
     <main>
       <div id="contact-page">
         <div id="wires-grid">
-          <img class="wires-rotated" src="Img/WiresRotated.png" alt="Wires" />
+          <img class="wires-rotated" src="img/rotated-wires.png" alt="Wires" />
         </div>
         <section id="intro-contact">
           <h1 class="flex-center">Contact</h1>
           <div>
             <h2 class="introductie text-align-center">
-              U kunt mij een bericht sturen via mijn email:
-              1207074@student.roc-nijmegen.nl
+              Mijn e-mail is: 1207074@student.roc-nijmegen.nl
             </h2>
           </div>
         </section>
@@ -50,12 +53,11 @@
           <input
             class="contact-verzenden flex-center"
             type="submit"
-            value="Verzenden"
-          />
+            value="Verzenden" />
         </form>
       </div>
       <div class="wires-alignment">
-        <img src="Img/Wires.png" alt="Wires" />
+        <img src="img/wires.png" alt="Wires" />
       </div>
     </main>
 
