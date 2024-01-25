@@ -83,6 +83,7 @@ header a {
 
 #preview-grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: auto auto auto;
   grid-column-gap: 40px;
   padding: 20px;
@@ -205,7 +206,6 @@ de pagina die van links naar rechts gaan te verwijderen */
   grid-area: 1 / 1 / 2 / 4;
   display: flex;
   justify-content: flex-start;
-  padding-left: 10px;
 }
 /* Hier heb ik de wires image ingedeeld met grid op de pagina */
 
@@ -431,8 +431,7 @@ met tekst die meer dikgedrukt is */
 werk hetzelfde gemaakt en een beetje een ronding gegeven */
 
 main div {
-  display: flex;
-  justify-content: center;
+  width: 98.4vw;
 }
 
 section {
