@@ -155,6 +155,7 @@ afbeeldingen gezet, maar met andere afmetingen */
   column-gap: 40px;
   padding-bottom: 40px;
 }
+/* Hier heb ik een deel op de work pagina ingedeeld met grid */
 
 .work-download {
   width: 400px;
@@ -166,17 +167,20 @@ afbeeldingen gezet, maar met andere afmetingen */
   margin-top: 50px;
   margin-bottom: 60px;
 }
+/* Hier heb ik de stijl voor de download link van mijn projecten */
 
 h3 {
   font-size: 30px;
   padding: 10px;
   margin-bottom: -20px;
 }
+/* Hier heb ik de grootte van de h3 teksten wat aangepast */
 
 h5 {
   font-size: 20px;
   padding: 10px;
 }
+/* Hier heb ik ook de grootte aangepast van deze teksten */
 
 .download-link {
   color: #0047fe;
@@ -193,6 +197,8 @@ h5 {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+/* Hier heb ik overflow x hidden gebruikt om de balk onderaan
+de pagina die van links naar rechts gaan te verwijderen */
 
 #wires-grid {
   height: 20vw;
@@ -201,12 +207,15 @@ h5 {
   justify-content: flex-start;
   padding-left: 10px;
 }
+/* Hier heb ik de wires image ingedeeld met grid op de pagina */
 
 #intro-contact {
   position: absolute;
   bottom: 40%;
   height: 20vw;
 }
+/* Hierh heb ik position absolute gebruikt om te zorgen dat
+de tekst over de afbeeldingen heen kan */
 
 form {
   position: relative;
@@ -215,6 +224,8 @@ form {
   width: 98.9vw;
   flex-direction: column;
 }
+/* Hier heb ik position relative gebruikt om deze
+forum waar je informatie in kunt vullen goed neer te zetten */
 
 input {
   width: 400px;
@@ -227,11 +238,13 @@ input {
   caret-color: #147fd6;
   text-indent: 10px;
 }
+/* Dit is het deel dat je invult in de form */
 
 .contact-verzenden {
   margin-top: 40px;
   font-size: 20px;
 }
+/* Dit is de verzend knop onderaan de form */
 
 .contact-verzenden:hover {
   animation: bounce-in 0.5s ease;
@@ -239,6 +252,8 @@ input {
   transition: 600ms;
   cursor: pointer;
 }
+/* Dit is wat je ziet als je over de verzend komtheen gaan.
+Zo krijg je dus een bounce in animatie van de knop en veranderd je cursor */
 
 /* Footer */
 footer {
@@ -251,17 +266,21 @@ footer {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
+/* Dit is de footer die voorkomt onderaan elke pagina ingedeeld met grid */
 
 footer div {
   display: flex;
   justify-content: space-evenly;
 }
+/* Dit is om alle divs in de footer gelijk te verdelen */
 
 .section-contact,
 .section-contact2 {
   display: flex;
   flex-direction: column;
 }
+/* Ik heb hier 2 verschillende klasses gebruikt, omdat ik
+bij de media query ze andere css heb gegeven */
 
 .section-contact {
   grid-area: 1 / 2 / 2 / 2;
@@ -273,6 +292,7 @@ p {
   font-size: 35px;
   width: 20vw;
 }
+/* Dit wat ruimte om de tekst p te zetten met padding */
 
 .footer-contact {
   margin-left: 40px;
@@ -283,6 +303,7 @@ p {
   height: 50px;
   margin-top: -20px;
 }
+/* Dit is de stijl van de contact mij knop in de footer */
 
 .footer-contact:hover {
   border-radius: 3px;
@@ -290,6 +311,7 @@ p {
   box-shadow: 0 0 20px #00fbff;
   transition: 600ms;
 }
+/* Dit is de hover van de contact mij knop */
 
 footer a {
   display: flex;
@@ -298,12 +320,14 @@ footer a {
   font-size: 23px;
   text-decoration: none;
 }
+/* Dit is om de links goed te positioneren in de footer */
 
 footer h4 {
   padding-top: 20px;
   padding-left: 40px;
   color: #607578;
 }
+/* Hier heb ik de tekst voor de ©️ een kleur gegeven en goed neer gezet */
 
 .footer-align1 {
   grid-area: 1 / 8 / 2 / 5;
@@ -315,6 +339,7 @@ footer h4 {
   height: 80%;
   margin: 25px;
 }
+/* Dit is de div wat een lijn voor delen in de footer is */
 
 .footer-align2 {
   grid-area: 1 / 10 / 2 / 8;
@@ -323,11 +348,13 @@ footer h4 {
 i {
   color: #7eaed5;
 }
+/* Hier heb ik kleur gegeven aan alle iconen */
 
 .flex-center {
   display: flex;
   justify-content: center;
 }
+/* Deze klasse heb ik vaker gebruikt om elementen in het midden te zetten */
 
 .footer-hover:hover,
 header a:hover {
@@ -336,15 +363,19 @@ header a:hover {
   box-shadow: 0 0 10px #00fbff;
   transition: 600ms;
 }
+/* Hier zorg ik dat er bij de footer en header een bounce in animatie
+is als je er overheen gaat met je cursor */
 
 .align-items-center {
   display: flex;
   align-items: center;
 }
+/* Deze klasse heb ik ook vaker gebruikt om onderdelen verticaal in het midden te zetten */
 
 .text-align-center {
   text-align: center;
 }
+/* Deze heb ik ook vaker gebruikt om de text te centreren */
 
 @keyframes bounce-in {
   0% {
@@ -356,16 +387,20 @@ header a:hover {
     opacity: 1;
   }
 }
+/* Dit zorgt voor de bounce in animatie bij sommige hovers */
 
 h1 {
   font-size: 72px;
   background: linear-gradient(#00fbff, rgba(0, 117, 255, 0));
   background-clip: text;
 }
+/* Hier heb ik een gradient op de tekst gezet die op elke
+pagina als titel gebruikt wordt */
 
 h2 {
   font-size: 40px;
 }
+/* De grootte van de tekst h2 wat aangepast */
 
 main h4 {
   font-size: 20px;
@@ -377,18 +412,23 @@ main h4 {
   font-weight: lighter;
   width: 45vw;
 }
+/* De font weight ligter gemaakt zodat de titel meer opvalt
+met tekst die meer dikgedrukt is */
 
 .wires-rotated {
   top: 100px;
   margin-top: 5px;
   margin-left: -7px;
 }
+/* De afbeelding van de wires naar onderen geduwd met top */
 
 .work-preview {
   width: 360px;
   height: 360px;
   border-radius: 20px;
 }
+/* De grootte van de afbeeldingen van delen van mijn
+werk hetzelfde gemaakt en een beetje een ronding gegeven */
 
 main div {
   display: flex;
@@ -398,12 +438,15 @@ main div {
 section {
   width: 98.4vw;
 }
+/* De breedte van alle secties zo breed gemaakt dat het geen
+balk onderaan geeft om van links naar rechts te bewegen */
 
 .wires-section {
   display: flex;
   justify-content: flex-start;
   height: 20vw;
 }
+/* Afbeelding van wires neergezet */
 
 .wires-section-change {
   position: absolute;
@@ -411,6 +454,7 @@ section {
   justify-content: flex-start;
   height: 20vw;
 }
+/* De wat andere afbeelding van wires neergezet */
 
 .wires-alignment {
   display: flex;
@@ -419,54 +463,67 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  /* Als de breedte van het scherm kleiner is dan 600px
+  en dus sowieso op telefoon dan past het sommige dingen aan */
   h1 {
     font-size: 45px;
   }
+  /* Tekst kleiner gemaakt dan de normale */
 
   body {
     overflow-x: hidden;
   }
+  /* Gezorgd voor geen balk onderaan */
 
   .footer-hover {
     display: none;
   }
+  /* Weggehaald, omdat het op telefoon anders ingedeeld is */
 
   .wires-alignment {
     display: none;
   }
+  /* Deze ook weggehaald */
 
   #intro-contact {
     bottom: 70%;
     width: 95%;
   }
+  /* Intro maar kleiner zodat het er beter uitziet op telefoon */
 
   #work-grids {
     transform: translateY(17%);
     grid-area: 2/ 1 / 5 / 3;
   }
+  /* De grid wat aangepast zodat het onder elkaar staat */
 
   .contact-grids {
     grid-area: 2/ 1 / 5 / 4;
   }
+  /* De grid wat aangepast zodat het onder elkaar staat */
 
   .intro {
     position: relative;
     bottom: 10%;
   }
+  /* Position veranderd om het beter te positioneren voor telefoon */
 
   #intro-work {
     position: relative;
     bottom: 0%;
   }
+  /* Position veranderd om het beter te positioneren voor telefoon */
 
   #index-main {
     height: 70vh;
   }
+  /* Height kleiner gemaatk */
 
   .about-intro-align {
     flex-direction: column;
     padding-top: 20px;
   }
+  /* Onder elkaar gezet met column */
 
   #work-align {
     display: flex;
@@ -476,6 +533,7 @@ section {
   #work-page {
     grid-template-rows: repeat(1, 1fr);
   }
+  /* In een rij onder elkaar gezet */
 
   input {
     width: 300px;
@@ -485,6 +543,7 @@ section {
     border-width: 4px;
     margin-bottom: 20px;
   }
+  /* De grootte van de input verkleint */
 
   #preview-grid {
     display: grid;
@@ -492,15 +551,18 @@ section {
     grid-template-rows: repeat(3, 1fr);
     padding: 20px;
   }
+  /* Grid neegezet zodat het past op een telefoon scherm */
 
   .work-preview {
     justify-self: center;
   }
+  /* In het midden gezet */
 
   #about-more {
     justify-self: center;
     padding-top: 40px;
   }
+  /* In het midden gezet en padding aangepast */
 
   .work-grid {
     display: grid;
@@ -508,6 +570,7 @@ section {
     grid-template-rows: repeat(3, 1fr);
     row-gap: 40px;
   }
+  /* Grid weer neegezet zodat het past op een telefoon scherm */
 
   .about-grid {
     display: grid;
@@ -515,24 +578,29 @@ section {
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
   }
+  /* Grid weer neegezet zodat het past op een telefoon scherm */
 
   main h4 {
     font-size: 20px;
     width: 70vw;
     text-align: center;
   }
+  /* Tekst kleiner gemaakt */
 
   #wires-about {
     display: none;
   }
+  /* Verwijderd omdat het niet goed past op telefoon scherm */
 
   .footer-line {
     display: none;
   }
+  /* Weggehaald omdat het anders is ingedeeld */
 
   header {
     width: 104%;
   }
+  /* Breedte aangepast */
 
   .footer-contact {
     width: 40%;
@@ -551,6 +619,7 @@ section {
     justify-content: center;
     font-size: 20px;
   }
+  /* Kleiner gemaakt en padding minder */
 
   footer h4 {
     display: flex;
@@ -559,12 +628,14 @@ section {
     padding-right: 0px;
     padding-left: 0px;
   }
+  /* Padding verminderd */
 
   header a {
     font-size: 20px;
     height: 35px;
     margin: 0 10px;
   }
+  /* Kleiner gemaakt */
 
   footer {
     transform: translateY(30%);
@@ -573,6 +644,7 @@ section {
     justify-content: center;
     flex-direction: column;
   }
+  /* Breedte kleiner gemaakt en anders gepositioneerd */
 
   #work-footer {
     background-color: transparent;
@@ -582,6 +654,7 @@ section {
     justify-content: center;
     flex-direction: column;
   }
+  /* Breedte aangepast en anders gepositioneerd */
 
   .section-contact2 {
     display: flex;
@@ -589,28 +662,34 @@ section {
     padding-top: 20px;
     gap: 20px;
   }
+  /* Anders ingedeeld met flex en padding kleiner gemaakt */
 
   .section-contact i {
     padding: 20px;
   }
+  /* Padding verminderd */
 
   #contact-intro {
     font-size: 28px;
     height: 100px;
   }
+  /* Tekst verkleind */
 
   .intro-about {
     font-size: 28px;
     width: 98%;
   }
+  /* Tekst en breedte verkleind */
 
   .introductie {
     width: 70vw;
     font-size: 28px;
   }
+  /* Tekst en breedte verkleind */
 
   #pfp {
     width: 20vw;
     height: auto;
   }
+  /* Breedte kleiner gemaakt */
 }
